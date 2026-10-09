@@ -114,20 +114,15 @@ public class SceneManager {
     
 
 
-    public static void showAlertInfo(Alert.AlertType tipo, String title, String content) {
-        Alert alert = new Alert(tipo);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(content);
-
-        DialogPane dialog = alert.getDialogPane();
-
-        dialog.getStylesheets().add(
-                SceneManager.class.getResource("/main/resources/css/alerts.css").toExternalForm()
-        );
-
-        alert.showAndWait();
-    }
+ public static void showAlertInfo(Alert.AlertType tipo, String title, String content) {
+    Alert alert = new Alert(tipo);
+    alert.setTitle(title);
+    alert.setHeaderText(null);
+    alert.setContentText(content);
+    
+  
+    alert.showAndWait();
+}
 
     
 

@@ -83,7 +83,7 @@ public class UserRepository {
     
     public List<Rol> getAllRoles() {
         List<Rol> lista = new ArrayList<>();
-        String sql = "select * from roles";
+        String sql = "select * from rol";
         try (Connection conn = DataBaseConnection.getConnection();
                 PreparedStatement pstm = conn.prepareStatement(sql);
                 ResultSet rs = pstm.executeQuery()) {
@@ -91,7 +91,7 @@ public class UserRepository {
             while (rs.next()) {
                 lista.add(new Rol(
                     rs.getString("id_rol"),
-                    rs.getString("nombre_rol")
+                    rs.getString("rol")
                 ));
             }
         } catch (SQLException e) {
