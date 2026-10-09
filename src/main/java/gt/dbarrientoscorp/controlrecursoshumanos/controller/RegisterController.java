@@ -1,13 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package main.java.gt.dbarrientoscorp.controlrecursoshumanos.controller;
+
+import main.java.gt.dbarrientoscorp.controlrecursoshumanos.service.AuthService;
+import main.java.gt.dbarrientoscorp.controlrecursoshumanos.util.SceneManager;
+
 
 /**
  *
- * @author informatica
+ * @author danielb
  */
+
+
 public class RegisterController {
+    
+    private final AuthService aService;
+    private final SceneManager sceneManager;
+
+    public RegisterController(AuthService aService, SceneManager sceneManager) {
+        this.aService = aService;
+        this.sceneManager = sceneManager;
+    }
+    
+    
     
 }
